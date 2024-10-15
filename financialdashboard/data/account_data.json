@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "accountNumber": "222222222",
+    "accountType": "Checking",
+    "balance": 16000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": "2024-10-15T08:01:16.2933553Z",
+    "deletedAt": null
+  },
+  {
+    "id": 2,
+    "accountNumber": "333333333",
+    "accountType": "Savings",
+    "balance": 50000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 3,
+    "accountNumber": "444444444",
+    "accountType": "Credit",
+    "balance": 10000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-02T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 4,
+    "accountNumber": "555555555",
+    "accountType": "Loan",
+    "balance": 2000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 5,
+    "accountNumber": "666666666",
+    "accountType": "Investment",
+    "balance": 6000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 6,
+    "accountNumber": "777777777",
+    "accountType": "Crypto",
+    "balance": 2000.00,
+    "userId": "1",
+    "currency": "CAD",
+    "createdAt": "2024-10-02T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 7,
+    "accountNumber": "123456789",
+    "accountType": "Checking",
+    "balance": 2000.00,
+    "userId": "2",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 8,
+    "accountNumber": "987654321",
+    "accountType": "Savings",
+    "balance": 6000.00,
+    "userId": "2",
+    "currency": "CAD",
+    "createdAt": "2024-10-01T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 9,
+    "accountNumber": "111111111",
+    "accountType": "Credit",
+    "balance": 2000.00,
+    "userId": "2",
+    "currency": "CAD",
+    "createdAt": "2024-10-02T12:00:00Z",
+    "updatedAt": null,
+    "deletedAt": null
+  }
+]

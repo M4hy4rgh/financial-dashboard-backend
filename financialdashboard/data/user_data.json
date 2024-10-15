@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "userName": "johndoe",
+    "email": "john@example.com",
+    "phoneNumber": "1234567890",
+    "password": "123456",
+    "residentialAddress": {
+      "id": 1,
+      "street": "123 Main St",
+      "street2": "unit 23",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "A1B 2C3",
+      "country": "Canada"
+    },
+    "mailingAddress": {
+      "id": 1,
+      "street": "123 Main St",
+      "street2": "unit 23",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "A1B 2C3",
+      "country": "Canada"
+    },
+    "createdAt": "2024-10-15T03:55:24.7255178Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 2,
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "userName": "alicejohnson",
+    "email": "alice@example.com",
+    "phoneNumber": "1234567890",
+    "password": "123456",
+    "residentialAddress": {
+      "id": 1,
+      "street": "456 Oak St",
+      "street2": null,
+      "city": "Vancouver",
+      "province": "BC",
+      "postalCode": "V7W 2Y8",
+      "country": "Canada"
+    },
+    "mailingAddress": {
+      "id": 1,
+      "street": "PO Box 123",
+      "street2": null,
+      "city": "Vancouver",
+      "province": "BC",
+      "postalCode": "V7W 2Y9",
+      "country": "Canada"
+    },
+    "createdAt": "2024-10-15T03:55:24.7255178Z",
+    "updatedAt": null,
+    "deletedAt": null
+  },
+  {
+    "id": 3,
+    "firstName": "Mah",
+    "lastName": "Doe",
+    "userName": "mahdoe",
+    "email": "Mahdou@gmail.com",
+    "phoneNumber": "123456789",
+    "password": "password",
+    "residentialAddress": {
+      "id": 1,
+      "street": "123 Main St",
+      "street2": "123 Main St",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M1M 1M1",
+      "country": "Canada"
+    },
+    "mailingAddress": {
+      "id": 1,
+      "street": "123 Main St",
+      "street2": "123 Main St",
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M1M 1M1",
+      "country": "Canada"
+    },
+    "createdAt": "2024-10-15T03:55:24.7255178Z",
+    "updatedAt": null,
+    "deletedAt": "2024-10-15T03:58:03.6413487Z"
+  },
+  {
+    "id": 4,
+    "firstName": "Mah",
+    "lastName": "Doe",
+    "userName": "mahdoe1",
+    "email": "Mahdou@gmail.com",
+    "phoneNumber": "987654321",
+    "password": "123",
+    "residentialAddress": {
+      "id": 1,
+      "street": "1234 Main St",
+      "street2": null,
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M1M 1M1",
+      "country": "Canada"
+    },
+    "mailingAddress": {
+      "id": 1,
+      "street": "123 Main St",
+      "street2": null,
+      "city": "Toronto",
+      "province": "ON",
+      "postalCode": "M1M 1M1",
+      "country": "Canada"
+    },
+    "createdAt": "2024-10-15T06:06:47.9162459Z",
+    "updatedAt": "2024-10-15T06:14:32.6977246Z",
+    "deletedAt": null
+  }
+]

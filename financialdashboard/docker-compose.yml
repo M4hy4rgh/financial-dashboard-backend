@@ -1,0 +1,51 @@
+version: '3.8'
+services:
+  # ======== SERVICES ========
+  user-service:
+    image: user-service
+    ports:
+      - "8084:8084"
+    build:
+      context: ./user-service
+      dockerfile: ./Dockerfile
+    container_name: user-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - discovery-service
+    networks:
+      - intellihive
+
+  account-service:
+    image: account-service
+    ports:
+      - "8083:8083"
+    build:
+      context: ./account-service
+      dockerfile: ./Dockerfile
+    container_name: account-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - discovery-service
+    networks:
+      - intellihive
+
+  transaction-service:
+    image: transaction-service
+    ports:
+      - "8085:8085"
+    build:
+      context: ./transaction-service
+      dockerfile: ./Dockerfile
+    container_name: transaction-service
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - discovery-service
+    networks:
+      - intellihive
+
+networks:
+  intellihive:
+    driver: bridge
