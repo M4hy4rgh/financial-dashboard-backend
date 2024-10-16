@@ -13,8 +13,16 @@ COPY --chown=gradle:gradle . /home/gradle/src
 # Set the working directory within the image, for executing future commands
 WORKDIR /home/gradle/src
 
-# Run gradle build within the container - NOT on the host machine
-RUN gradle build
+COPY --chown=gradle:gradle gradle/ ./gradle
+COPY --chown=gradle:gradle build.gradle.kts settings.gradle.kts ./
+
+# Run gradle build within the container
+RUN gradle --no-daemon build --stacktrace --parallel --info -x test || return 0
+
+COPY --chown=gradle:gradle . .
+
+RUN gradle build --no-daemon
+
 
 #package stage
 FROM openjdk:17-jdk-alpine
