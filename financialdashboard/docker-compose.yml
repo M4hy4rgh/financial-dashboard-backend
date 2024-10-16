@@ -1,5 +1,7 @@
+version: '3.8'
 services:
 
+  # ======== SERVICES ========
   user-service:
     image: user-service
     ports:
