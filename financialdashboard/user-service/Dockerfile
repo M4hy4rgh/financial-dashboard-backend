@@ -14,7 +14,7 @@ COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 
 # Run gradle build within the container - NOT on the host machine
-RUN gradle build --no-daemon
+RUN gradle build
 
 #package stage
 FROM openjdk:17-jdk-alpine
