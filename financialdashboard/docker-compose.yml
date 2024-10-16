@@ -1,5 +1,6 @@
 version: '3.8'
 services:
+
   # ======== SERVICES ========
   user-service:
     image: user-service
@@ -11,10 +12,7 @@ services:
     container_name: user-service
     environment:
       SPRING_PROFILES_ACTIVE: docker
-    depends_on:
-      - discovery-service
-    networks:
-      - intellihive
+
 
   account-service:
     image: account-service
@@ -26,10 +24,7 @@ services:
     container_name: account-service
     environment:
       SPRING_PROFILES_ACTIVE: docker
-    depends_on:
-      - discovery-service
-    networks:
-      - intellihive
+
 
   transaction-service:
     image: transaction-service
@@ -41,11 +36,3 @@ services:
     container_name: transaction-service
     environment:
       SPRING_PROFILES_ACTIVE: docker
-    depends_on:
-      - discovery-service
-    networks:
-      - intellihive
-
-networks:
-  intellihive:
-    driver: bridge
