@@ -150,6 +150,34 @@ public class AccountServiceImpl implements AccountService {
         }
     }
 
+    @Override
+    public  List<AccountResponse> getAccountByUserId(String userId) {
+        log.info("Getting account details for user id: {}", userId);
+
+        try {
+//            List<AccountResponse> accounts = getUserResponseList();
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("data/account_data.json");
+
+            if (inputStream == null) {
+                throw new FileNotFoundException("File not found: data/account_data.json");
+            }
+            List<AccountResponse> accounts = objectMapper.readValue(inputStream, new TypeReference<List<AccountResponse>>() {
+            });
+
+            return accounts.stream()
+                    .filter(a -> a.getUserId().equals(userId))
+                    .toList();
+
+        } catch (FileNotFoundException e) {
+            log.error("File not found", e);
+            throw new RuntimeException("File not found", e);
+        } catch (IOException e) {
+            log.error("Error while reading accounts.json file", e);
+            throw new RuntimeException("Error while reading user_data.json file", e);
+        }
+    }
+
+
     //helper methods
     private List<AccountResponse> getUserResponseList() throws IOException {
         File userDataFile = new File("./data/account_data.json");

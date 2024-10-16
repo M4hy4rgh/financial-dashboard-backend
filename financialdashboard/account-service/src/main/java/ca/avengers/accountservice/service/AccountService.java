@@ -15,4 +15,6 @@ public interface AccountService {
 
     public List<AccountResponse> getAllAccounts();
 
+    public  List<AccountResponse> getAccountByUserId(String userId);
+
 }

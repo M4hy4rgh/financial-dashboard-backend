@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/account")
 @RequiredArgsConstructor
@@ -46,7 +47,12 @@ public class AccountController {
         return ResponseEntity.ok().build();
     }
 
-
+    @GetMapping("/user/{userId}")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity< List<AccountResponse>> getAccountByUserId(@PathVariable String userId) {
+        List<AccountResponse> accountResponse = accountService.getAccountByUserId(userId);
+        return ResponseEntity.ok(accountResponse);
+    }
 
 
 }
