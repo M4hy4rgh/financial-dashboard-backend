@@ -13,7 +13,7 @@
     {
         "id": 2,
         "accountNumber": "333333333",
-        "accountType": "Savings",
+        "accountType": "Saving",
         "balance": 58300.00,
         "userId": "1",
         "currency": "CAD",
@@ -79,7 +79,7 @@
     {
         "id": 8,
         "accountNumber": "987654321",
-        "accountType": "Savings",
+        "accountType": "Saving",
         "balance": 6000.00,
         "userId": "2",
         "currency": "CAD",
