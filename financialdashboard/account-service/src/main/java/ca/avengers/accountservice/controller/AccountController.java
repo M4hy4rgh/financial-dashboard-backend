@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.math.BigDecimal;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://financial-dashboard-seven-sigma.vercel.app/")
 @RestController
 @RequestMapping("/api/account")
 @RequiredArgsConstructor
