@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-@CrossOrigin(origins = {"https://financial-dashboard-seven-sigma.vercel.app", "http://localhost:5173"})
+@CrossOrigin(origins = {"https://financial-dashboard-seven-sigma.vercel.app"})
 @RestController
 @RequestMapping("/api/transaction")
 @RequiredArgsConstructor
